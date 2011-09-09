@@ -3,13 +3,17 @@ h1. Recurly Postbin Scraper
 h2. About
 
 * This rails app is used to scrape postbin.
-* This is where the push notifications are sent to.
-* New notifications are then stored in a MySQL database.
+* This is where your webhooks are sent to
+* These are scraped then stored in a MySQL database.
 * New notifications are then pushed (POSTed) to locations of choice
+* We only push new unique webhook
+* This is used if you are sat behind a firewall
+* Proxy option available
+* We scrape postbin every 10 seconds (modify as you please)
 
 h2. Setup
 
-* git clone BLAH
+* git clone git://github.com/asmega/postbin_scraper.git (bonus points for forking)
 * bundle install
 * modify config/endpoints.yml
 
