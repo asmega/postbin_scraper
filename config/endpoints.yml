@@ -1,0 +1,10 @@
+# internal enpoints are where a proxy is not need
+
+internal:
+  - "http://localhost:3000/where/here"
+
+# external endpoints are where they reside outside the network and the proxy will be used
+# to have no external endpoints do as below. otherwise uncomment
+
+external:
+#  - "http://www.postbin.org/ABC123"

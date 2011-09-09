@@ -1,0 +1,1 @@
+script/rails runner "while true do puts 'scraping'; Notification.scrape; puts 'sleeping'; sleep 10; end"
