@@ -1,4 +1,4 @@
-h1. Recurly Postbin Scraper
+h1. Postbin Scraper
 
 h2. About
 
