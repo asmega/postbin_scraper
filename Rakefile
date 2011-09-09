@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-RecurlyPostbinScraper::Application.load_tasks
+PostbinScraper::Application.load_tasks
