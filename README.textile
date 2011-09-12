@@ -18,6 +18,8 @@ h2. Setup
 * modify config/endpoints.yml
 * modify constants in app/models/notifications
 * modify script/scrape
+* modify config/database.yml
+* @rake db:migrate@
 
 h2. Usage
 
