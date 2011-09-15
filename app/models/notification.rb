@@ -36,8 +36,8 @@ class Notification < ActiveRecord::Base
     ENDPOINTS["internal"].try(:each) do |endpoint|
       begin
         RestClient.post(endpoint, body, {:content_type => "application/xml"})
-      rescue RestClient::BadRequest
-        # do nothing atm
+      rescue RestClient::BadRequest, RestClient::Found, RestClient::InternalServerError => e
+        puts e
       end
     end
 
